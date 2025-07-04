@@ -1,0 +1,14 @@
+Flask==3.0.0
+Flask-Login
+Flask-SQLAlchemy
+SQLAlchemy
+PyMySQL
+Werkzeug
+Flask-WTF
+WTForms
+email-validator
+requests
+Flask-Mail
+Pillow
+itsdangerous
+gunicorn
