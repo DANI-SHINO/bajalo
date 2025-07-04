@@ -5,7 +5,7 @@ class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'clave-secreta-super-segura'
 
     # URL de conexión (sin ?ssl-mode=REQUIRED)
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('mysql+pymysql://avnadmin:AVNS_xlj5WYOprcR-tFN6xX1@mysql-1b6c1203-mirandadiazjesusdaniel-8cf4.k.aivencloud.com:21093/defaultdb')
 
     # Opciones de SQLAlchemy (usa SSL de forma correcta)
     SQLALCHEMY_ENGINE_OPTIONS = {
