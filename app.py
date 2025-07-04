@@ -23,6 +23,7 @@ def create_app():
 
     return app
 
+app = create_app()  # ✅ Esta línea es la clave
+
 if __name__ == '__main__':
-    app = create_app()
     app.run(debug=True)
