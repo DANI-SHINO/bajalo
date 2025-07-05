@@ -15,11 +15,11 @@ def create_app():
     login_manager.init_app(app)
     mail.init_app(app)
 
-    from models import Usuario  # 👈 IMPORTANTE: tu modelo con UserMixin
+    from models import User  # 👈 IMPORTANTE: tu modelo con UserMixin
 
     @login_manager.user_loader
     def load_user(user_id):
-        return Usuario.query.get(int(user_id))
+        return User.query.get(int(user_id))
 
     with app.app_context():
         from routes import main
